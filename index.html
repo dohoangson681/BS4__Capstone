@@ -5,11 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONT GOOGLE  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Inconsolata:wght@300&family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;700&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Inconsolata:wght@300&family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;700&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- FONT AWESOME  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- OWL CAROUSEL  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <!-- BS4  -->
     <link
       rel="stylesheet"
@@ -21,29 +33,687 @@
     <link rel="stylesheet" href="./css/index.css" />
     <title>Studios-Education</title>
   </head>
-  <body>
+  <body id="body">
     <!-- header  -->
-    <div class="title">
-        <h3>Student Community <span>Feedback</span> </h3>
-    </div>
+    <header class="header">
+      <div class="header__top container-fluid d-flex justify-content-between">
+        <div class="header__top__left">
+          <a href="#"><span>Have any question ?</span></a>
+          <a href="#">
+            <i class="fa fa-phone icon-phone"></i>
+            <span>+1(21) 234 4567</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-envelope"></i>
+            <span>mail@example.com</span>
+          </a>
+        </div>
+        <div class="header__top__right">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <div id="header__bottom" class="header__bottom">
+        <nav id="navBar"
+          class="navbar navBar container-fluid navbar-expand-lg navbar-light"
+        >
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./image__education/logo.png" alt="logo" />
+            <span>Studious</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarItemContent"
+            aria-controls="navbarItemContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarItemContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COURSES</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PAGES <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">BLOG POST</a>
+                  <a class="dropdown-item" href="#">BLOG SINGLE</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+                  <a class="dropdown-item" href="#">404 PAGE</a>
+                  <a class="dropdown-item" href="#">EMAIL TEMPLATE</a>
+                  <a class="dropdown-item" href="#">LANDING PAGE</a>
+                  <a class="dropdown-item" href="#">SHORTCODES</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">CONTACT US</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <div
+                class="input__search d-flex align-items-center justify-content-end"
+              >
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Enter Keyword  "
+                />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <button class="change__theme" id="theme__button">
+                <i class="fa-solid fa-sun sun_icon"></i>
+                <i class="fa-regular fa-moon moon_icon"></i>
+              </button>
+
+              <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- carousel  -->
+    <section class="carousel">
+      <div class="owl-carousel owl-theme">
+        <div class="item caorousel__item carousel__item__one">
+          <!-- <img class="img-fluid" src="./image__education/banner2.jpg" alt="banner"> -->
+          <div class="carousel__caption container">
+            <h5>Master the Skills to Drive your Career</h5>
+            <a href="#">
+              Know More
+              <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="carousel__overlay"></div>
+        </div>
+        <div class="item caorousel__item carousel__item__two">
+          <!-- <img class="img-fluid" src="./image__education/banner3.jpg" alt="banner"> -->
+          <div class="carousel__caption container">
+            <h5>Studious is the best choice for everyone</h5>
+            <a href="#">
+              Know More
+              <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- major  -->
+    <section class="major container">
+      <div class="row maJor">
+        <div class="col-12 col-md-6 col-lg-3 major__item mb-md-3 mb-sm-3 mb-3 ">
+          <div class="major__item__content major__item__one">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <a href="#">Engineering & Architecture</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 major__item mb-md-3 mb-sm-3 mb-3 ">
+          <div class="major__item__content major__item__two">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <a href="#">Learning Management</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 major__item mb-md-3 mb-sm-3 mb-3 ">
+          <div class="major__item__content major__item__three">
+            <i class="fa fa-coffee" aria-hidden="true"></i>
+            <a href="#">Business & Management</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 major__item mb-md-3 mb-sm-3 mb-3 ">
+          <div class="major__item__content major__item__four">
+            <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+            <a href="#">Artificial Intelligence</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- welcome  -->
+    <section class="welcome container py-5">
+      <div class="welcome__title title mb-5 pb-sm-4">
+        <h3>Welcome to <span>Studious</span></h3>
+      </div>
+      <div class="welcome__content pb-4">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 welcome__item mb-5 mb-lg-0">
+            <div class="welcome__detail">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <a href="#">
+                <h3 class="welcome__detail__title">Trending Courses</h3>
+              </a>
+              <p class="welcome__detail__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                eiusmod te incididunt
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 welcome__item mb-5 mb-lg-0">
+            <div class="welcome__detail">
+              <i class="fa-solid fa-users"></i>
+              <a href="#">
+                <h3 class="welcome__detail__title">Certificated Teachers</h3>
+              </a>
+              <p class="welcome__detail__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                eiusmod te incididunt
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 welcome__item mb-5 mb-lg-0">
+            <div class="welcome__detail">
+              <i class="fa-solid fa-book"></i>
+              <a href="#">
+                <h3 class="welcome__detail__title">Books & Library</h3>
+              </a>
+              <p class="welcome__detail__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                eiusmod te incididunt
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- course  -->
+    <section class="course py-5">
+      <div class="course__content container py-md-5 py-4">
+        <div class="course__content__title title mb-5 pb-sm-4">
+          <h3>Pick a Course to <span>Get Started</span></h3>
+        </div>
+        <div class="course__content__item">
+          <div class="row">
+            <!-- the thu 1  -->
+            <div class="col-12 col-md-6 col-lg-4 course__card">
+              <div class="card courseCard">
+                <div class="course__card__head">
+                  <img
+                    src="./image__education/c1.jpg"
+                    class="card-img-top"
+                    alt="card"
+                  />
+                  <div class="courseCardHead__list">
+                    <a href="#">Art</a>
+                    <a href="#">Design</a>
+                  </div>
+                  <div class="coursrCardHead__price">
+                    <h6>$400</h6>
+                  </div>
+                </div>
+
+                <div class="card-body course__card__body">
+                  <div class="card__head__body d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-signal"></i>
+                      <span>Intermediate</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                      <span>10 week</span>
+                    </div>
+                  </div>
+                  <h4>
+                    <a class="noclas" href="#">Donec sed teus enime</a>
+                  </h4>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="card__head__foot"></div>
+                </div>
+                <div class="course__card__foot d-flex justify-content-between">
+                  <div>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="knowDetail" href="#">
+                      Know Details
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- the thu 2  -->
+            <div class="col-12 col-md-6 col-lg-4 course__card">
+              <div class="card courseCard">
+                <div class="course__card__head">
+                  <img
+                    src="./image__education/c2.jpg"
+                    class="card-img-top"
+                    alt="card"
+                  />
+                  <div class="courseCardHead__list">
+                    <a href="#">Digital</a>
+                    <a href="#">Learn</a>
+                    <a href="#">10% Off</a>
+                  </div>
+                  <div class="coursrCardHead__price">
+                    <h6>$900</h6>
+                  </div>
+                </div>
+                <div class="card-body course__card__body">
+                  <div class="card__head__body d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-signal"></i>
+                      <span>High</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                      <span>10 week</span>
+                    </div>
+                  </div>
+                  <h4>
+                    <a href="#">It's enim ad minim ate</a>
+                  </h4>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="card__head__foot"></div>
+                </div>
+                <div class="course__card__foot d-flex justify-content-between">
+                  <div>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="knowDetail" href="#">
+                      Know Details
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- the thu 3  -->
+            <div class="col-12 col-md-6 col-lg-4 course__card">
+              <div class="card courseCard">
+                <div class="course__card__head">
+                  <img
+                    src="./image__education/c3.jpg"
+                    class="card-img-top"
+                    alt="card"
+                  />
+                  <div class="courseCardHead__list">
+                    <a href="#">Html</a>
+                    <a href="#">Java</a>
+                  </div>
+                  <div class="coursrCardHead__price">
+                    <h6>$99</h6>
+                  </div>
+                </div>
+                <div class="card-body course__card__body">
+                  <div class="card__head__body d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-signal"></i>
+                      <span>Beginner</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                      <span>10 week</span>
+                    </div>
+                  </div>
+                  <h4>
+                    <a href="#">Ullamco laboris nisi uts</a>
+                  </h4>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="card__head__foot"></div>
+                </div>
+                <div class="course__card__foot d-flex justify-content-between">
+                  <div>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="knowDetail" href="#">
+                      Know Details
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- the thu 4  -->
+            <div class="col-12 col-md-6 col-lg-4 course__card">
+              <div class="card courseCard">
+                <div class="course__card__head">
+                  <img
+                    src="./image__education/c4.jpg"
+                    class="card-img-top"
+                    alt="card"
+                  />
+                  <div class="courseCardHead__list">
+                    <a href="#">Website</a>
+                    <a href="#">Wordpress</a>
+                  </div>
+                  <div class="coursrCardHead__price">
+                    <h6>$369</h6>
+                  </div>
+                </div>
+                <div class="card-body course__card__body">
+                  <div class="card__head__body d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-signal"></i>
+                      <span>Intermediate</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                      <span>10 week</span>
+                    </div>
+                  </div>
+                  <h4>
+                    <a href="#">Donec sed teus enime</a>
+                  </h4>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="card__head__foot"></div>
+                </div>
+                <div class="course__card__foot d-flex justify-content-between">
+                  <div>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="knowDetail" href="#">
+                      Know Details
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- the thu 5  -->
+            <div class="col-12 col-md-6 col-lg-4 course__card">
+              <div class="card courseCard">
+                <div class="course__card__head">
+                  <img
+                    src="./image__education/c5.jpg"
+                    class="card-img-top"
+                    alt="card"
+                  />
+                  <div class="courseCardHead__list">
+                    <a href="#">Marketing</a>
+                    <a href="#">Edu</a>
+                  </div>
+                  <div class="coursrCardHead__price">
+                    <h6>$499</h6>
+                  </div>
+                </div>
+                <div class="card-body course__card__body">
+                  <div class="card__head__body d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-signal"></i>
+                      <span>High</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                      <span>10 week</span>
+                    </div>
+                  </div>
+                  <h4>
+                    <a href="#">It's enim ad minim ate</a>
+                  </h4>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="card__head__foot"></div>
+                </div>
+                <div class="course__card__foot d-flex justify-content-between">
+                  <div>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="knowDetail" href="#">
+                      Know Details
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- the thu 6  -->
+            <div class="col-12 col-md-6 col-lg-4 course__card">
+              <div class="card courseCard">
+                <div class="course__card__head">
+                  <img
+                    src="./image__education/c6.jpg"
+                    class="card-img-top"
+                    alt="card"
+                  />
+                  <div class="courseCardHead__list">
+                    <a href="#">Study</a>
+                    <a href="#">Academic</a>
+                  </div>
+                  <div class="coursrCardHead__price">
+                    <h6>$289</h6>
+                  </div>
+                </div>
+                <div class="card-body course__card__body">
+                  <div class="card__head__body d-flex justify-content-between">
+                    <div>
+                      <i class="fa-solid fa-signal"></i>
+                      <span>Beginner</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                      <span>10 week</span>
+                    </div>
+                  </div>
+                  <h4>
+                    <a href="#">Ullamco laboris nisi uts</a>
+                  </h4>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="card__head__foot"></div>
+                </div>
+                <div class="course__card__foot d-flex justify-content-between">
+                  <div>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="knowDetail" href="#">
+                      Know Details
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- browse more course  -->
+        <div class="browse__course text-center mt-5">
+          <a class="btn btn-style btn-style-secondary mt-sm-3" href="#">
+            Browse more courses 
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+       
+      </div>
+    </section>
     <!-- feature  -->
+    <section class="feature py-5">
+        <div class="feature__content container py-4">
+          <div class="feature__detail pb-sm-5 mb-sm-4 pt-sm-3">
+            <div class="row">
+              <div class="col-md-0 col-xl-4"></div>
+              <div class="col-md-12 col-xl-8">
+                <div class="row">
+                  <!-- feature 1  -->
+                  <div class="col-12 col-md-6 mb-3 ">
+                    <div class="pr-0 pr-md-3">
+                      <div class="row feature__item">
+                      <div class="col-3 feature__icon">
+                        
+                      <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-9 feature__text">
+                        <h5>Flexible Classes</h5>
+                        <p>Lorem ipsum dolor sit amet, dolor elit</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <!-- feature 2  -->
+                  <div class="col-12 col-md-6 mb-3 ">
+                    <div class="pl-0 pl-md-3">
+                      <div class="row feature__item">
+                        <div class="col-3 feature__icon">
+                          
+                          <i class="fa fa-download" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-9 feature__text">
+                          <h5>Offline Mode</h5>
+                          <p>Lorem ipsum dolor sit amet, dolor elit</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                     
+                  </div>
+                  <!-- feature 3  -->
+                  <div class="col-12 col-md-6  mt-0 mt-md-3 ">
+                    <div class="pr-0 pr-md-3">
+                      <div class="row feature__item">
+                      <div class="col-3 feature__icon">
+                        <i class="fa fa-headphones" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-9 feature__text">
+                        <h5>Educator Help</h5>
+                        <p>Lorem ipsum dolor sit amet, dolor elit</p>
+                      </div>
+                    </div>
+                    </div>
+                    
+                  </div>
+                  <!-- feature 4  -->
+                  <div class="col-12 col-md-6  mt-3">
+                    <div class="pl-0 pl-md-3">
+                      
+                    <div class="row feature__item">
+                      <div class="col-3 feature__icon">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-9 feature__text">
+                        <h5>Online Classes</h5>
+                        <p>Lorem ipsum dolor sit amet, dolor elit</p>
+                      </div>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
     <!-- number  -->
     <!-- feedback  -->
     <!-- instructor  -->
     <!-- contact  -->
     <!-- footer  -->
-
-
-
-
-
-
-
-
 
     <!-- BS4 JS  -->
     <script
@@ -56,5 +726,23 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+    <!-- owl carousel  -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+    <!-- shrink nav  -->
+    <script src="./js/shrink__navbar.js"></script>
+    <!-- change theme  -->
+    <script src="./js/change__theme.js"></script>
   </body>
 </html>
