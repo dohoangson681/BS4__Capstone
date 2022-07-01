@@ -570,9 +570,7 @@ body {
   display: none !important;
 } */
 /* CHANGE THEME  */
-#body.dark {
-  background-color: #060606;
-}
+
 .dark  #theme__button .moon_icon {
   display: none;
 }
