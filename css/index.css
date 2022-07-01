@@ -183,10 +183,11 @@ body {
 }
 .sun_icon {
   display: none;
+  transition: all .5s;
 }
 /* carousel */
 .carousel {
-  margin-top: 91px;
+  margin-top: 90px;
 }
 .carousel__item__one {
   background-image: url("../image__education/banner2.jpg");
@@ -570,12 +571,108 @@ body {
   display: none !important;
 } */
 /* CHANGE THEME  */
-
+#body.dark {
+  background-color: #161c2d;
+}
 .dark  #theme__button .moon_icon {
   display: none;
 }
 .dark  #theme__button .sun_icon{
   display: block;
+}
+/* dark header  */
+.dark .header__top {
+  background-color: #4867b0;
+}
+.dark .navbar-brand span {
+  color: white;
+}
+.dark .header__bottom {
+  background-color: #161c2d;
+}
+.dark #navbarItemContent .nav-link {
+  color: white;
+}
+.dark .navbar-nav .dropdown-menu {
+  background-color: #161c2d;
+  border: 1px solid rgb(255 255 255 / 20%);
+  box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
+}
+.dark .dropdown-item {
+  color: white;
+}
+.dark .change__theme {
+  background-color: #161c2d;
+}
+.dark .title h3 {
+  color: white;
+}
+.dark .title h3::before ,.dark .title h3::after  {
+  background-color: white;
+}
+.dark .form-control {
+  background-color: rgb(22 28 45);
+}
+.dark .input__search i {
+  background-color: rgb(22 28 45);
+}
+/* welcome  */
+.dark .welcome__detail > i {
+  color: #4867b0;
+  background-color: rgb(168 176 195 / 11%);
+}
+.dark .welcome__detail__title {
+  color: white;
+  
+}
+.dark .welcome__detail__title:hover {
+  color:#ff6e65;
+}
+.dark .welcome__detail__text {
+  color: #b7b7b7;
+}
+/* COURSE  */
+.dark .course {
+  background-color: #121725;
+}
+.dark .course__card .card {
+  border-radius: 8px 8px 8px 8px;
+  background-color: #121725;
+  border: 1px solid rgb(255 255 255 / 20%);
+}
+.dark .course__card__foot {
+  border-top-color:rgb(255 255 255 / 20%) ;
+}
+.dark .card__head__body span {
+  color: white;
+}
+.dark .course__card__body h4 a {
+  color: white;
+  transition: all 0.5s ease 0s;
+
+}
+.dark .course__card__body h4:hover a {
+  color: #ff6e65;
+}
+.dark .course__card__body p {
+  color: #b7b7b7;
+}
+.dark .btn-style:hover {
+  background-color: #4867b0;
+  
+}
+/* feature  */
+.dark .feature__item {
+  background-color: #161c2d;
+}
+.dark .feature__item i {
+  color: #4867b0;
+}
+.dark .feature__text h5 {
+  color: white;
+}
+.dark .feature__text p {
+  color: #b7b7b7;
 }
 
 
