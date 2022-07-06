@@ -142,6 +142,7 @@ body {
   padding: 21px 15px;
   font-size: 15px;
   background: transparent;
+  transition: all .5s;
 }
 .input__search .form-control:focus {
   outline: none;
@@ -162,6 +163,7 @@ body {
   border-radius: 0px 30px 30px 0px;
   color: #0d369f;
   transition: all 0.5s;
+  background-color: transparent;
 }
 .input__search i:hover {
   color: #ff6e65;
@@ -567,9 +569,189 @@ body {
     color: #707070;
     letter-spacing: .4px;
 }
-/* .header__top.d-flex {
-  display: none !important;
-} */
+/* NUMBER  */
+.number__item__detail {
+  border-right: 1px solid #eee;
+}
+.number__counter {
+  font-size: 46px;
+    font-weight: 600;
+    color: #060606;
+}
+.counter__text {
+  color: #060606 ;
+
+}
+/* FEEDBACK  */
+.feedback__item__detail {
+  padding: 32px;
+  background-color: white;
+  box-shadow: rgb(4 20 69 / 10%) 0px 1px 20px 0px;
+  border-radius: 5px;
+}
+.feedback__item__top {
+  padding-right: 22px;
+}
+.feedback__item__top i {
+  vertical-align: super;
+}
+.feedback__item__top p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 27px;
+  color: #707070;
+  letter-spacing: .4px;
+  margin-top: 13px;
+  vertical-align: bottom;
+}
+.feedback__item__bottom {
+  margin-top: 20px;
+}
+.feedback__botom__img img {
+  border-radius: 50%;
+}
+.feedback__bottom__title {
+  margin-left: 15px;
+}
+.feedback__bottom__title h5 {
+  font-weight: 600;
+  line-height: 16px;
+  color: #060606;
+  margin-bottom: 5px;
+}
+.feedback__bottom__title p {
+  font-size: 13px;
+  color: #707070;
+  margin: 0px;
+}
+/* INSTRUCTOR  */
+.cardStyle {
+  padding: 8px;
+  box-shadow: rgb(4 20 69 / 10%) 0px 1px 20px 0px;
+}
+.cardStyle .card-title a {
+  font-weight: 600;
+  color: #060606;
+  transition: all .5s;
+
+}
+.cardStyle:hover .card-title a {
+  color: #ff6e65;
+  text-decoration: none;
+}
+.cardStyle .card-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #707070;
+}
+.cardStyle__img {
+  position: relative;
+  overflow: hidden;
+
+}
+.cardStyle__overlay {
+  position: absolute;
+  background: rgb(8 8 8 / 29%);
+  padding: 20px 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  transform: translateY(200px);
+  transition: all .5s;
+
+}
+.cardStyle:hover .cardStyle__overlay {
+  transform: translateY(0);
+}
+.cardStyle__overlayIcon a {
+  text-align: center;
+  background: #fff;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #0d369f;
+  margin: 0px 5px;
+}
+/* contact  */
+.contact__rightTitle  {
+  color: #060606;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45px;
+}
+.contact__right p {
+  margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
+}
+.contact__left img {
+  margin-left: 30px;
+}
+/* footer  */
+.footer__sub {
+  padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #fff;
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    top: -60px; */
+    box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
+}
+.footer__sub1 .footer__sub1Title {
+  font-size: 38px;
+    line-height: 40px;
+    color: #060606;
+    font-weight: 600;
+}
+.footer__sub1 p {
+  font-size: 15px;
+  color: #707070;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-top: 15px;
+}
+.footer__sub2 input {
+    background: transparent;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: var(--heading-color);
+    width: 338px;
+    border-radius: 8px 0px 0px 8px;
+    height: 55px;
+    border: 1px solid #eee;
+}
+.footer__sub2 .btn {
+  background: #0d369f;
+  border: none;
+  color: #fff;
+  padding: 16px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 0 8px 8px 0;
+  transition: all .5s;
+}
+.footer__sub2 .btn:hover {
+  opacity: .9;
+}
+
+
+
+
+
+
+
+
+
 /* CHANGE THEME  */
 #body.dark {
   background-color: #161c2d;
@@ -614,7 +796,7 @@ body {
   background-color: rgb(22 28 45);
 }
 .dark .input__search i {
-  background-color: rgb(22 28 45);
+  background-color:transparent;
 }
 /* welcome  */
 .dark .welcome__detail > i {
