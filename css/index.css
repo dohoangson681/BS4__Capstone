@@ -13,6 +13,7 @@ body {
 }
 body {
   position: relative;
+  scroll-behavior: smooth;
 }
 /* css chung cho title cua mot so phan section  */
 .title {
@@ -20,7 +21,7 @@ body {
 }
 .title h3 {
   color: black;
-  font-size: 40px;
+  font-size: 43px;
   line-height: 50px;
   font-weight: 600;
   position: relative;
@@ -186,6 +187,11 @@ body {
 .sun_icon {
   display: none;
   transition: all .5s;
+}
+.btnSubmitHeader {
+  border: transparent;
+  background-color: transparent;
+  border-radius: 0px 30px 30px 0px;
 }
 /* carousel */
 .carousel {
@@ -593,12 +599,13 @@ body {
   padding-right: 22px;
 }
 .feedback__item__top i {
+  font-size: 20px;
   vertical-align: super;
 }
 .feedback__item__top p {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 27px;
   color: #707070;
   letter-spacing: .4px;
@@ -619,6 +626,7 @@ body {
   line-height: 16px;
   color: #060606;
   margin-bottom: 5px;
+  font-size: 22px;
 }
 .feedback__bottom__title p {
   font-size: 13px;
@@ -629,6 +637,7 @@ body {
 .cardStyle {
   padding: 8px;
   box-shadow: rgb(4 20 69 / 10%) 0px 1px 20px 0px;
+  width: 16.3rem;
 }
 .cardStyle .card-title a {
   font-weight: 600;
@@ -693,16 +702,19 @@ body {
   margin-left: 30px;
 }
 /* footer  */
+.footer__content {
+  position: relative;
+}
 .footer__sub {
   padding: 50px;
     max-width: 1000px;
     margin: 0 auto;
     border-radius: 10px;
     background: #fff;
-    /* position: absolute;
+    position: absolute;
     left: 0;
     right: 0;
-    top: -60px; */
+    top: -110px;
     box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
 }
 .footer__sub1 .footer__sub1Title {
@@ -729,6 +741,10 @@ body {
     height: 55px;
     border: 1px solid #eee;
 }
+.footer__sub2 input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(46 202 139 / 25%);
+}
 .footer__sub2 .btn {
   background: #0d369f;
   border: none;
@@ -743,8 +759,128 @@ body {
 .footer__sub2 .btn:hover {
   opacity: .9;
 }
-
-
+.footer__section {
+  padding: 80px 0;
+  background: #060e1f;
+  padding-top: 200px;
+}
+.footer__item h6 {
+    color: #fff;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(23, 54, 88, 0.4);
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.footer__item ul li{
+  list-style: none;
+}
+.footer__item ul a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #cecece;
+    margin: 0 0 10px 0;
+    display:inline-block;
+    transition:  all .5s;
+    margin-bottom: 10px;
+}
+.footer__item ul li a i {
+  font-size: 10px;
+  color: white;
+  margin-right: 5px;
+}
+.footer__item ul li:hover a {
+  color: white;
+  text-decoration: none;
+}
+.footer__item ul li i {
+  color: white;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.footer__item ul li a {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.footer__contactLink2 {
+  margin-top: 10px;
+  padding: 10px 0;
+}
+.footer__location {
+  margin-top: 10px;
+}
+.footer__contact li a {
+  margin-bottom: 0px;
+}
+.footer__contact {
+  border-right: 1px solid rgb(64 73 82 / 51%);
+}
+.footer__about p {
+  font-size: 14px;
+    line-height: 24px;
+    color: #cecece;
+}
+.about__icon a {
+    font-size: 14px;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(255, 255, 255, 0.06);
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s;
+}
+.about__icon a:hover {
+  opacity: 0.8;
+}
+.footer__copyright {
+  background: #040a17;
+    padding: 20px 0;
+    color: ;
+}
+.footer__copyright p {
+  font-size: 16px;
+    line-height: 20px;
+    color: #a0a0a0;
+    margin-bottom: 0px;
+}
+/* BACK TO TOP  */
+.btnBackTop {
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    z-index: 9;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #4867b0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    padding: 0;
+    transition: all .5s;
+    visibility: hidden;
+  opacity: 0;
+}
+.btnBackTop:hover {
+  opacity: .9;
+  color: white;
+}
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
+}
 
 
 
@@ -794,6 +930,12 @@ body {
 }
 .dark .form-control {
   background-color: rgb(22 28 45);
+}
+.dark .formInput__header {
+  border-color: #f8f9ff;
+}
+.dark .formInput__header::placeholder {
+  color: white;
 }
 .dark .input__search i {
   background-color:transparent;
@@ -856,6 +998,72 @@ body {
 .dark .feature__text p {
   color: #b7b7b7;
 }
+/* number  */
+.dark .number__counter {
+  color: #fdfffc;
+}
+.dark .counter__text {
+  color: #fdfffc;
+}
+/* feedback  */
+.dark .feedback__item__detail {
+  background: #161c2d;
+  box-shadow: 0 20px 62px hsl(222deg 34% 17%);
+}
+.dark .feedback__item__top i {
+  color: #ff6e65;
+}
+.dark .feedback__item__top p {
+  color: #b7b7b7;
+}
+.dark .feedback__bottom__title h5 {
+  color: #fdfffc;
+}
+.dark .feedback__bottom__title p {
+  color:#b7b7b7 ;
+}
+/* instructor  */
+.dark .cardStyle {
+  background-color: #161d2e;
+  box-shadow: 0 20px 62px hsl(222deg 34% 17%);
+}
+.dark .cardStyle .card-title a {
+ color: #fdfffc ;
+}
+.dark .cardStyle .card-text {
+  color: #b7b7b7;
+}
+.dark .contact__rightTitle {
+  color: #fdfffc;
+}
+.dark .contact__right p {
+  color: #b7b7b7;
+}
+/* footer  */
+.dark .footer__sub {
+  background-color: #161c2d;
+}
+.dark .footer__sub1 .footer__sub1Title {
+  color: #fdfffc;
+}
+.dark .footer__sub1 p {
+  color: #b7b7b7;
+}
+/* .dark .form-control {
+  border: 1px solid rgb(255 255 255 / 20%);
+} */
+.dark .form__footer:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(46 202 139 / 25%);
+}
+.dark .footer__sub2 .btn {
+  background-color: #4867b0;
+  transition: all .5s;
+}
+.dark .footer__sub2 .btn:hover {
+  opacity: .9;
+}
+
 
 
 
@@ -870,6 +1078,11 @@ body {
   .carousel__caption h5 {
     font-size: 70px;
     line-height: 75px;
+  }
+}
+@media screen and (min-width : 992px) and (max-width : 1200px) {
+  .cardStyle {
+    width: 14rem;
   }
 }
 @media screen and (min-width:1100px) and (max-width:1200px){
@@ -901,6 +1114,13 @@ body {
   .carousel__caption h5 {
     font-size: 50px;
     line-height: 60px;
+  }
+  .cardStyle {
+    width: 21rem;
+    margin-bottom: 50px;
+  }
+  .contact__left img {
+    margin: 0px 168px;
   }
 }
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -948,7 +1168,23 @@ body {
 .welcome {
     margin-top: 200px;
 }
- 
+/* number  */
+.number__counter {
+  font-size: 35px;
+}
+.counter__text {
+  font-size: 15px;
+}
+.number__item__detail {
+  border-right: 0px;
+}
+/* contact  */
+.footer__sub {
+  margin: 0 3.5vw;
+}
+.footer__sub2 input {
+  width: 25.5vw;
+}
 }
 @media screen and (max-width : 768px){
   /* carousel  */
@@ -967,6 +1203,20 @@ body {
   /* welcome  */
   .welcome {
     margin-top: 530px;
+  }
+  /* instructor  */
+  .cardStyle {
+    width: 15rem;
+    margin-bottom: 50px;
+  }
+  .contact__left img {
+    margin: 0px 78px;
+  }
+  .footer__sub2 input {
+    width: 55vw;
+  }
+  .footer__sub2 .btn {
+    padding: 16px 45px;
   }
 }
 @media screen and (max-width : 575.98px){
@@ -1019,6 +1269,14 @@ body {
   }
   .feature__item i {
     margin-top: 40px;
+  }
+  /* instructor  */
+  .cardStyle {
+    width: 99%;
+  }
+  /* contact  */
+  .contact__left img {
+    margin: 0px 49.6px;
   }
 }
 @media  screen and (max-width : 400px) {

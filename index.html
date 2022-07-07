@@ -124,11 +124,15 @@
                 class="input__search d-flex align-items-center justify-content-end"
               >
                 <input
-                  class="form-control mr-sm-2"
+                  type="search"
+                  required = "required"
+                  class="form-control formInput__header mr-sm-2"
                   type="search"
                   placeholder="Enter Keyword  "
                 />
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <button type="submit" class="btnSubmitHeader">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
               </div>
               <button type="button" class="change__theme" id="theme__button">
                 <i class="fa-solid fa-sun sun_icon"></i>
@@ -137,6 +141,7 @@
 
              
             </form>
+            
           </div>
         </nav>
       </div>
@@ -718,25 +723,25 @@
         </div>
         <div class="number__item">
           <div class="row">
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-lg-3 mb-sm-0 mb-2">
               <div class="number__item__detail">
                 <div class="number__counter">6300</div>
                 <p class="counter__text">LEARNERS & COUNTING</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-lg-3 mb-sm-0 mb-2">
               <div class="number__item__detail">
                 <div class="number__counter">638</div>
                 <p class="counter__text">TOTAL COURSES</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-lg-3 mb-sm-0 mb-2">
               <div class="number__item__detail">
                 <div class="number__counter">7600</div>
                 <p class="counter__text">SUCCESSFUL STUDENTS</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-lg-3 mb-sm-0 mb-2">
               <div class="number__item__detail">
                 <div class="number__counter">36</div>
                 <p class="counter__text">LANGUAGES</p>
@@ -755,7 +760,7 @@
         <div class="feedback__item">
           <div class="row mt-md-5">
             <!-- item 1  -->
-            <div class="col-4 ">
+            <div class="col-12 col-md-6 col-lg-4 mb-lg-0 mb-4">
               <div class="feedback__item__detail">
                 <div class="feedback__item__top">
                   
@@ -775,7 +780,7 @@
               </div>
             </div>
             <!-- item 2  -->
-            <div class="col-4 ">
+            <div class="col-12 col-md-6 col-lg-4 mb-lg-0 mb-4">
               <div class="feedback__item__detail">
                 <div class="feedback__item__top">
                   
@@ -795,7 +800,7 @@
               </div>
             </div>
             <!-- item 3  -->
-            <div class="col-4 ">
+            <div class="col-12 col-md-6 col-lg-4 mb-lg-0 mb-4">
               <div class="feedback__item__detail">
                 <div class="feedback__item__top">
                   
@@ -828,8 +833,8 @@
         <div class="instructor__item">
           <div class="row">
             <!-- team 1  -->
-            <div class="col-3">
-              <div class="card cardStyle" style="width: 16.3rem;">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card cardStyle">
                 <div class="cardStyle__img">
                   <img src="./image__education/team1.jpg" class="card-img-top" alt="team">
                   <div class="cardStyle__overlay d-flex justify-content-center">
@@ -860,8 +865,8 @@
                 </div>
             </div>
             <!-- team 2  -->
-            <div class="col-3">
-              <div class="card cardStyle" style="width: 16.3rem;">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card cardStyle">
                 <div class="cardStyle__img">
                   <img src="./image__education/team2.jpg" class="card-img-top" alt="team">
                   <div class="cardStyle__overlay d-flex justify-content-center">
@@ -891,8 +896,8 @@
                 </div>
             </div>
             <!-- team 3  -->
-            <div class="col-3">
-              <div class="card cardStyle" style="width: 16.3rem;">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card cardStyle">
                 <div class="cardStyle__img">
                   <img src="./image__education/team3.jpg" class="card-img-top" alt="team">
                   <div class="cardStyle__overlay d-flex justify-content-center">
@@ -922,8 +927,8 @@
                 </div>
             </div>
             <!-- team 4  -->
-            <div class="col-3">
-              <div class="card cardStyle" style="width: 16.3rem;">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card cardStyle">
                 <div class="cardStyle__img">
                   <img src="./image__education/team4.jpg" class="card-img-top" alt="team">
                   <div class="cardStyle__overlay d-flex justify-content-center">
@@ -960,10 +965,10 @@
     <div class="contact pb-5">
       <div class="contact__content container pb-md-5 pb-4 mb-5">
         <div class="row justify-content-center align-items-center">
-          <div class="col-5 contact__left">
+          <div class="col-12 col-lg-5 contact__left">
             <img class="img-fluid" src="./image__education/image.png" alt="contact image">
           </div>
-          <div class="col-7 contact__right pr-lg-5">
+          <div class="col-12 col-lg-7 contact__right pr-lg-5">
             <h3 class="contact__rightTitle mb-sm-3 mb-2">
               Not Sure Where to Begin? <br>Contact Now, We will Help you</h3>
               <p>Consectetur adipiscing elit. Aliquam sit amet
@@ -977,24 +982,118 @@
       </div>
     </div>
     <!-- footer  -->
-    <div class="footer mt-5 pt-5">
+    <section class="footer mt-5 pt-5">
       <div class="footer__content">
         <div class="footer__sub">
           <div class="row">
-            <div class="col-6 footer__sub1">
+            <div class="col-12 col-md-6 footer__sub1">
               <h4 class="footer__sub1Title mb-lg-2">Subscribe Us to join our Community </h4>
               <p>Newsletter</p>
             </div>
-            <div class="col-6 footer__sub2 d-flex align-items-center">
+            <div class="col-12 col-md-6 footer__sub2 d-flex align-items-center">
               <form class="d-flex ">
-                <input type="email" class="form-control" name="email" placeholder="Enter your email">
+                <input type="email" class="form-control form__footer" name="email" placeholder="Enter your email">
                 <button class="btn" type="submit">Send</button>
               </form>
             </div>
           </div>
         </div>
+        <div class="footer__section ">
+          <div class="row footer__item container mx-auto">
+            <div class="col-12 col-sm-6 col-lg-2 footer__quickLink">
+              <h6>QUICK LINKS</h6>
+              <ul>
+                <li><a href="#">
+                  <i class="fa-solid fa-angles-right"></i>
+                  Home
+                </a></li>
+                <li><a href="#">
+                  <i class="fa-solid fa-angles-right"></i>
+                  About
+                </a></li>
+                <li><a href="#">
+                  <i class="fa-solid fa-angles-right"></i>
+                  Courses
+                </a></li>
+                <li><a href="#">
+                  <i class="fa-solid fa-angles-right"></i>
+                  Contact
+                </a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 pl-lg-5 footer__help">
+              <h6>HELP & SUPPORT</h6>
+              <ul>
+                <li><a href="#">
+                  <i class="fa-solid fa-angles-right"></i>
+                  Live Chart
+                </a></li>
+                <li><a href="#">
+                  <i class="fa-solid fa-angles-right"></i>
+                  Faq
+                </a></li>
+                <li><a href="#">
+                  <i class="fa-solid fa-angles-right"></i>
+                  Support
+                </a></li>
+                <li><a href="#">
+                  <i class="fa-solid fa-angles-right"></i>
+                  Terms of Services
+                </a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 footer__contact">
+              <h6>CONTACT</h6>
+              <ul>
+                <li class="footer__contactLink1">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a style="margin-bottom:0px ;" href="#">info@example.com</a>
+                </li>
+                <li class="footer__contactLink2">
+                  <i class="fa-solid fa-phone"></i>
+                  <a style="margin-bottom:0px ;" href="#">+44-000-888-999</a>
+              </li>
+                <li>
+                  <p class="footer__location">
+                    <i class="fa-solid fa-location-dot"></i>
+                  <span style="color:#cecece ;">London, 235 Terry, 10001</span>
+                  </p>
+              </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 pl-lg-5 footer__about">
+              <h6>ABOUT</h6>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
+              <div class="about__icon">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-github-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="footer__copyright text-center">
+          <p>@2021 Studious. All rights reserved. Design by W3Layouts</p>
+        </div>
       </div>
-    </div>
+    </section>
+    <!-- back to top  -->
+    <a href="#" class="cd-top text-replace js-cd-top btnBackTop">
+      <i class="fa-solid fa-turn-up"></i>
+    </a>
     <!-- BS4 JS  -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -1035,5 +1134,8 @@
         time: 5000
     });
     </script>
+    <!-- back to top  -->
+    <script src="./js/back-to-top.js"></script>
+    <script src="./js/util.js"></script>
   </body>
 </html>
