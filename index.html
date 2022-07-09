@@ -68,11 +68,18 @@
           class="navbar navBar container-fluid navbar-expand-lg navbar-light"
         >
           <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="./image__education/logo.png" alt="logo" />
+            <img class="logoNav" src="./image__education/logo.png" alt="logo" />
             <span>Studious</span>
           </a>
-          <button
-            class="navbar-toggler"
+          <div class="responsive__2btn d-flex align-items-center">
+            <!-- button changtheme 2  -->
+            <button type="button" class="change__theme d-block themeBtnTwo" id="theme__button2">
+              <i class="fa-solid fa-sun sun_icon"></i>
+              <i class="fa-regular fa-moon moon_icon"></i>
+              <!-- btn toggle navbar  -->
+            </button>
+            <button
+            class="navbar-toggler buttonToggle__Nav d-block"
             type="button"
             data-toggle="collapse"
             data-target="#navbarItemContent"
@@ -80,8 +87,11 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars iconToggle__Nav"></i>
           </button>
+          </div>
+          
 
           <div class="collapse navbar-collapse" id="navbarItemContent">
             <ul class="navbar-nav ml-auto">
@@ -119,9 +129,9 @@
                 <a class="nav-link">CONTACT US</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0 justify-content-center">
               <div
-                class="input__search d-flex align-items-center justify-content-end"
+                class="input__search inputsearch__header d-flex align-items-center justify-content-end"
               >
                 <input
                   type="search"
@@ -134,7 +144,7 @@
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
-              <button type="button" class="change__theme" id="theme__button">
+              <button type="button" class="change__theme themeBtnOne" id="theme__button">
                 <i class="fa-solid fa-sun sun_icon"></i>
                 <i class="fa-regular fa-moon moon_icon"></i>
               </button>
@@ -1123,7 +1133,7 @@
       });
     </script>
     <!-- shrink nav  -->
-    <script src="./js/shrink__navbar.js"></script>
+    <!-- <script src="./js/shrink__navbar.js"></script> -->
     <!-- change theme  -->
     <script src="./js/change__theme.js"></script>
     <!-- counter up  -->
