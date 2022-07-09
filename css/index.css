@@ -946,6 +946,9 @@ body {
 .dark .title h3 {
   color: white;
 }
+.dark .navbar-nav .dropdown-menu {
+  border-color: white;
+}
 .dark .title h3::before ,.dark .title h3::after  {
   background-color: white;
 }
@@ -1304,7 +1307,19 @@ body {
     margin: 10px 0px 0px 0px;
   }
 }
+@media screen and (max-width :601px) {
+  .welcome {
+    margin-top: 550px;
+}
+}
 @media screen and (max-width : 575.98px){
+  .footer__sub1 {
+    margin-bottom: 15px;
+  }
+  .feedback__bottom__title h5 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
   .header__bottom {
     width: 100vw;
    }
@@ -1394,6 +1409,13 @@ body {
 }
 }
 @media  screen and (max-width : 400px) {
+  .footer__sub1 {
+    margin-bottom: 15px;
+  }
+  .feedback__bottom__title h5 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
   .carousel__caption a {
     margin: 20px 0px 0px;
   }
@@ -1437,6 +1459,13 @@ body {
  
 }
 @media  screen and (max-width : 321px){
+  .footer__sub1 {
+    margin-bottom: 15px;
+  }
+  .feedback__bottom__title h5 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
   .carousel__caption {
     top: 100px;
     
@@ -1451,6 +1480,9 @@ body {
 
 }
 @media  screen and (max-width : 281px) {
+  .footer__sub1 {
+    margin-bottom: 15px;
+  }
   .header__bottom {
     width: 100vw;
    }
@@ -1500,6 +1532,10 @@ body {
   .footer__sub2 input {
     width: 70vw;
 }
+.feedback__bottom__title h5 {
+  font-size: 12px;
+  margin-top: 10px;
+}
 /* galaxy fold  */
 .navbar-brand img {
   width: 2rem;
@@ -1537,6 +1573,9 @@ body {
 }
 }
 @media screen and (max-width : 241px){
+  .footer__sub1 {
+    margin-bottom: 15px;
+  }
   #navbarItemContent {
     top: 13vh;
   }
@@ -1553,6 +1592,7 @@ body {
   }
   .feedback__bottom__title h5 {
     font-size: 12px;
+    margin-top: 10px;
   }
   .footer__sub2 {
     padding-left: 0px;
